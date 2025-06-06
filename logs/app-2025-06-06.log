@@ -1,0 +1,20 @@
+[2025/06/06 22:56:37 +09:00][EXCEPTION] SQLSTATE[HY000] [1045] Access denied for user 'root'@'172.19.0.5' (using password: YES)
+#0 /var/www/html/libs/DB.php(33): PDO->__construct('mysql:host=mysq...', 'root', Object(SensitiveParameterValue))
+#1 /var/www/html/libs/DB.php(16): MyLib\DB->connectToDatabase()
+#2 /var/www/html/public/index.php(8): MyLib\DB->__construct()
+#3 {main}
+[2025/06/06 22:56:39 +09:00][EXCEPTION] SQLSTATE[HY000] [1045] Access denied for user 'root'@'172.19.0.5' (using password: YES)
+#0 /var/www/html/libs/DB.php(33): PDO->__construct('mysql:host=mysq...', 'root', Object(SensitiveParameterValue))
+#1 /var/www/html/libs/DB.php(16): MyLib\DB->connectToDatabase()
+#2 /var/www/html/public/index.php(8): MyLib\DB->__construct()
+#3 {main}
+[2025/06/06 22:58:50 +09:00][EXCEPTION] SQLSTATE[HY000] [1045] Access denied for user 'root'@'172.19.0.5' (using password: YES)
+#0 /var/www/html/libs/DB.php(33): PDO->__construct('mysql:host=mysq...', 'root', Object(SensitiveParameterValue))
+#1 /var/www/html/libs/DB.php(16): MyLib\DB->connectToDatabase()
+#2 /var/www/html/public/index.php(8): MyLib\DB->__construct()
+#3 {main}
+[2025/06/06 22:59:09 +09:00][EXCEPTION] PDO::ATTR_STATEMENT_CLASS class must be a valid class
+#0 /var/www/html/libs/DB.php(40): PDO->setAttribute(13, Array)
+#1 /var/www/html/libs/DB.php(16): MyLib\DB->connectToDatabase()
+#2 /var/www/html/public/index.php(8): MyLib\DB->__construct()
+#3 {main}
