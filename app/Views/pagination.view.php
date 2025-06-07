@@ -13,7 +13,7 @@
 		?>
 		<li class="page-item active">
 			<a class="page-link" href="<?php echo $item->url ?>">
-                <?php echo $item->label ?> <span class="sr-only">(current)</span>
+                <?php echo $item->label ?>
             </a>
 		</li>
 		<?php

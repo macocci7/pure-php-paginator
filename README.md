@@ -86,50 +86,60 @@ php public/index.php
 
 output:
 ```bash
--------------------------------------------------------
+<!doctype html>
+<html>
+    <head>
+        <title>Pure PHP Paginator with PDOStatement Wrapper</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <div class="card">
+            <div class="card-body">
+    <p>
 Page 1/34:
-  1: Prof. Eduardo Turcotte <jcollier@example.com>
-  2: Ramiro Kuhn <lucius.christiansen@example.com>
-  3: Benny Johnson <lynch.raegan@example.net>
--------------------------------------------------------
-Page 10/34:
- 28: Gregory Vandervort <curtis55@example.com>
- 29: Wilford Heller <archibald22@example.net>
- 30: Elsie Ruecker V <dameon.welch@example.org>
--------------------------------------------------------
-<p>100 found</p>
+    </p>
+    <ul class="list-group">
+            <li class="list-group-item">
+              1: Mae Funk &lt;jaqueline72@example.com&gt;        </li>
+            <li class="list-group-item">
+              2: Miss Kathlyn Robel &lt;roel.carroll@example.com&gt;        </li>
+            <li class="list-group-item">
+              3: Prof. Orland Little &lt;sallie00@example.com&gt;        </li>
+        </ul>
+    <p>100 found</p>
 <nav>
         <ul class="pagination">
-                                        <li class="page-item">
-                <a class="page-link" href="?page=9">
-                    &laquo; Previous                </a>
-            </li>
                                         <li class="page-item disabled">
-                <span class="page-link">...</span>
-            </li>
-                                        <li class="page-item">
-                <a class="page-link" href="?page=9">
-                    9                </a>
+                <span class="page-link">&laquo; Previous</span>
             </li>
                                 <li class="page-item active">
-                        <a class="page-link" href="?page=10">
-                10 <span class="sr-only">(current)</span>
-            </a>
+                        <a class="page-link" href="?page=1">
+                1            </a>
                 </li>
                                         <li class="page-item">
-                <a class="page-link" href="?page=11">
-                    11                </a>
+                <a class="page-link" href="?page=2">
+                    2                </a>
             </li>
                                         <li class="page-item disabled">
                 <span class="page-link">...</span>
             </li>
                                         <li class="page-item">
-                <a class="page-link" href="?page=11">
+                <a class="page-link" href="?page=2">
                     Next &raquo;                </a>
             </li>
                         </ul>
 </nav>
+            </div>
+        </div>
+    </body>
+</html>
 ```
+
+This HTML will be displayed in a web browser as follows:
+
+<img src="pure_php_paginator.png" width="500" />
 
 ## LICENSE
 
